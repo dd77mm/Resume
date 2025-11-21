@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: snow;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-image: url(cs.png);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    text-align: center;
+    color: snow;
+    padding: 20px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: gray;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+    nav ul li {
+        margin: 5px;
+    }
+
+        nav ul li a {
+            display: block;
+            padding: 20px 100px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, font-size 0.3s ease;
+            font-size: 18px;
+        }
+
+            nav ul li a:hover {
+                background-color: lightslategrey;
+            }
+
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #333;
+}
+
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+    ul li {
+        margin-bottom: 10px;
+    }
+
+@media screen and (max-width: 768px ) {
+    header, section {
+        text-align: center;
+    }
+
+    nav ul {
+        text-align: center;
+        flex-direction: column;
+    }
+
+        nav ul li {
+            margin-bottom: 10px;
+        }
+
+    .card {
+        padding: 15px;
+    }
+
+    .btn {
+        padding: 10px 15px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 10px;
+}
+
+#fetch-location {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#clear-location {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+    #fetch-location:hover, #clear-location:hover {
+        background-color: lightslategrey;
+    }
+
+#location-info {
+    margin-top: 20px;
+    font-size: 16px;
+}
